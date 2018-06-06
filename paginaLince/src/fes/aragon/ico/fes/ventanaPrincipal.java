@@ -48,9 +48,9 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         });
 
         jEditorPane1.setEditable(false);
-        jEditorPane1.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
+        jEditorPane1.setFont(new java.awt.Font("Comic Sans MS", 2, 14)); // NOI18N
         jEditorPane1.setForeground(new java.awt.Color(0, 51, 51));
-        jEditorPane1.setText("INFORMACION:\n\nPara visualizar informacion acerca de estos apartados selecciona de la barra de menu \"Menu\", te daremos una breve descripcion del contenido:\n\n:::> Teoria Basica de Ingenieria de Software <:::\n\nAqui encontraras conceptos básicos de la ingenieria del software como buen estudiante de ingenieria en computación deberias saberlo.\n\n:::> SCRUM <:::\n\nAqui encontraras informacion concerniente a SCRUM que es una metodologia de desarrollo de software pero bueno para que te cuento investigalo por ti mismo y ¡gracias a esto! pues tienes esta aplicacion.\n\n:::> Informacion de desarrolladores <:::\n\nAqui encontraras informacion de estos garañones de la computacionpra que nos invites unos drinks ya que no es facil diseñar estas chunches, pero bueno conoceras nuestros, nombres, e-mails, redes sociales, hobbies, telefonos, etc.\n\n:::> Salir <:::\n\nSi ya viste todo pues ni modo ¡hasta la proxima!\n");
+        jEditorPane1.setText("INFORMACION:\n\nPara visualizar informacion acerca de estos apartados selecciona de la barra de menu \"Menu\", te daremos una breve descripcion del contenido:\n\n:::> Teoria Basica de Ingenieria de Software <:::\n\nAqui encontraras conceptos básicos de la ingenieria del software \ncomo buen estudiante de ingenieria en computación deberias saberlo.\n\n:::> SCRUM <:::\n\nAqui encontraras informacion concerniente a SCRUM que es una metodologia de desarrollo de software \npero bueno para que te cuento investigalo por ti mismo y ¡gracias a esto! pues tienes esta aplicacion.\n\n:::> Informacion de desarrolladores <:::\n\nAqui encontraras informacion de estos garañones de la computacion para que nos invites unos drinks \nya que no es facil diseñar estas chunches, pero bueno conoceras nuestros, nombres, e-mails, redes sociales, \nhobbies, telefonos, etc.\n\n:::> Salir <:::\n\nSi ya viste todo pues ni modo ¡hasta la proxima! y si no por lo menos danos un like\n");
         jScrollPane1.setViewportView(jEditorPane1);
 
         jMenu1.setText("Menu");
@@ -94,7 +94,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 939, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
