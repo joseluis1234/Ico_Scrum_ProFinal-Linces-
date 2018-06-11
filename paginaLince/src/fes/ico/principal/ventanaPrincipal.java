@@ -59,7 +59,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         jEditorPane1.setEditable(false);
         jEditorPane1.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
         jEditorPane1.setForeground(new java.awt.Color(0, 51, 51));
-        jEditorPane1.setText("INFORMACION:\n\nPara visualizar informacion acerca de estos apartados selecciona de la barra de menu \"Menu\", te daremos una breve \ndescripcion del contenido:\n\n:::> Teoria Basica de Ingenieria de Software <:::\n\nAqui encontraras conceptos básicos de la ingenieria del software como buen estudiante de ingenieria en computación \ndeberias saberlo.\n\n:::> SCRUM <:::\n\nAqui encontraras informacion concerniente a SCRUM que es una metodologia de desarrollo de software pero bueno para \nque te cuento investigalo por ti mismo y ¡gracias a esto! pues tienes esta aplicacion.\n\n:::> Informacion de desarrolladores <:::\n\nAqui encontraras informacion de estos garañones de la computacion para que nos invites unos drinks ya que no es facil diseñar estas chunches, pero bueno conoceras nuestros, nombres, e-mails, redes sociales, hobbies, telefonos, etc.\n\n:::> Salir <:::\n\nSi ya viste todo pues ni modo ¡hasta la proxima!\n");
+        jEditorPane1.setText("INFORMACION:\n\nPara visualizar informacion acerca de estos apartados selecciona de la barra de menu \"Menu\", te daremos una breve \ndescripcion del contenido:\n\n:::> Teoria Basica de Ingenieria de Software <:::\n\nAqui encontraras conceptos básicos de la ingenieria del software como buen estudiante de ingenieria en computación \ndeberias saberlo.\n\n:::> SCRUM <:::\n\nAqui encontraras informacion concerniente a SCRUM que es una metodologia de desarrollo de software pero bueno para \nque te cuento investigalo por ti mismo y ¡gracias a esto! pues tienes esta aplicacion.\n\n:::> Informacion de desarrolladores <:::\n\nAqui encontraras informacion de estos garañones de la computacion para que nos invites unos drinks ya que no es facil \ndiseñar estas chunches, pero bueno conoceras nuestros, nombres, e-mails, redes sociales, hobbies, telefonos, etc.\n\n:::> Salir <:::\n\nSi ya viste todo pues ni modo ¡hasta la proxima!\n");
         jScrollPane1.setViewportView(jEditorPane1);
 
         jMenu1.setText("Menu");
@@ -123,12 +123,14 @@ public class ventanaPrincipal extends javax.swing.JFrame {
 
         // TODO add your handling code here:
         fes.ico.ventanas.Ing_de_Software.main(args);
+        this.setVisible(false);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         String[] args = null;
         // TODO add your handling code here:
         fes.aragon.ico.fes.Desarrolladores.main(args);
+        this.setVisible(false);
       
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
@@ -145,6 +147,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         String[] args = null;
         // TODO add your handling code here:
         fes.ico.agiles.Grafico_agil.main(args);
+        this.setVisible(false);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     public static void main(String args[]) {

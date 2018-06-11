@@ -5,6 +5,7 @@
  */
 package fes.ico.agiles;
 
+import fes.ico.principal.ventanaPrincipal;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.io.FileNotFoundException;
@@ -20,10 +21,10 @@ import javax.swing.JPanel;
  * @author Miguel
  */
 public class Grafico_agil extends javax.swing.JFrame {
-    private int i=0;
+
+    private int i = 0;
     Info informacion = new Info();
     Encabezados encabezado = new Encabezados();
-    
 
     /**
      * Creates new form Grafico_agil
@@ -34,13 +35,13 @@ public class Grafico_agil extends javax.swing.JFrame {
         setResizable(false);
         setTitle("Metodologias Agiles");
         setIconImage(new ImageIcon(getClass().getResource("/imagenes/icono.png")).getImage());
-        ((JPanel)getContentPane()).setOpaque(false);
-        ImageIcon uno=new ImageIcon(this.getClass().getResource("/imagenes/background.jpg"));
-        JLabel fondo= new JLabel();
+        ((JPanel) getContentPane()).setOpaque(false);
+        ImageIcon uno = new ImageIcon(this.getClass().getResource("/imagenes/background.jpg"));
+        JLabel fondo = new JLabel();
         fondo.setIcon(uno);
-        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
-        fondo.setBounds(0,0,uno.getIconWidth(),uno.getIconHeight());
-        
+        getLayeredPane().add(fondo, JLayeredPane.FRAME_CONTENT_LAYER);
+        fondo.setBounds(0, 0, uno.getIconWidth(), uno.getIconHeight());
+
     }
 
     /**
@@ -155,7 +156,7 @@ public class Grafico_agil extends javax.swing.JFrame {
             habilitar();
             imprimiendo();
             topeSup();
-            
+
         } catch (Exception e) {
         }
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -167,14 +168,16 @@ public class Grafico_agil extends javax.swing.JFrame {
             habilitar();
             imprimiendo();
             topeSup();
-           
+
         } catch (Exception e) {
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+        this.setVisible(false);
+        ventanaPrincipal v = new ventanaPrincipal();
+        v.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -207,44 +210,43 @@ public class Grafico_agil extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Grafico_agil nuevo= new Grafico_agil();
+                Grafico_agil nuevo = new Grafico_agil();
                 nuevo.setVisible(true);
                 nuevo.jButton4.setEnabled(false);
-                
-                
+
             }
         });
-       
+
     }
 
     //ESTOS METODOS AYUDAN A HABILITAR Y DESAHIBILITAR LOS BOTONES CUANDO LLEGAN A SU RESPECTIVO LIMITE
-    private void habilitar(){
-        
-        if(i<=0){
+    private void habilitar() {
+
+        if (i <= 0) {
             jButton4.setEnabled(false);
-        }else{
+        } else {
             jButton4.setEnabled(true);
         }
     }
-  
-    private void topeSup(){
-            if(i<3){
+
+    private void topeSup() {
+        if (i < 3) {
             jButton3.setEnabled(true);
-        }else if(i==3){
+        } else if (i == 3) {
             jButton3.setEnabled(false);
         }
-        }
-    
+    }
+
     private void imprimiendo() throws FileNotFoundException, IOException {
-               
+
         try {
             //ESTE BLOQUESITO YA FUNCIONA CON EL ARREGLO
             jTextArea1.setText(informacion.getInfo(i));
-            jLabel2.setText(encabezado.enviar(i));           
+            jLabel2.setText(encabezado.enviar(i));
         } catch (Exception e) {
         }
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;

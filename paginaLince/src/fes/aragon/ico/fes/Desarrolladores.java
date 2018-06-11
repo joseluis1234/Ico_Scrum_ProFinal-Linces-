@@ -1,5 +1,6 @@
 package fes.aragon.ico.fes;
 
+import fes.ico.principal.ventanaPrincipal;
 import javax.swing.ImageIcon;
 
 /**
@@ -259,6 +260,11 @@ public class Desarrolladores extends javax.swing.JFrame {
         );
 
         jButton2.setText("MENU");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -449,6 +455,13 @@ public class Desarrolladores extends javax.swing.JFrame {
         Imagen5 Ar = new Imagen5(jPanel5);
         jPanel5.add(Ar).repaint();
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        ventanaPrincipal v = new ventanaPrincipal();
+        v.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public static void main(String args[]) {
 
